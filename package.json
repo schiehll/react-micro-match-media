@@ -22,7 +22,12 @@
   ],
   "scripts": {
     "build": "node ./scripts/build.js",
-    "prepublish": "yarn build",
+    "build:test":
+      "webpack --config __tests__/webpack.config.js --mode production --silent",
+    "serve:test": "serve __tests__/public --silent --local",
+    "cypress": "cypress run",
+    "test": "npm run build:test & npm run serve:test & npm run cypress",
+    "prepublish": "npm run build",
     "precommit": "lint-staged"
   },
   "peerDependencies": {
@@ -30,19 +35,26 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
+    "cypress": "^2.1.0",
     "husky": "^0.14.3",
     "lint-staged": "^7.0.4",
     "pascal-case": "^2.0.1",
     "prettier": "^1.12.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
     "rollup": "^0.58.0",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-commonjs": "^9.1.0",
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-replace": "^2.0.0",
-    "rollup-plugin-uglify": "^3.0.0"
+    "rollup-plugin-uglify": "^3.0.0",
+    "serve": "^6.5.5",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.14"
   }
 }

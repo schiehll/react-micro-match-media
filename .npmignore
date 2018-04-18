@@ -1,2 +1,5 @@
 scripts
 src
+.cache
+__tests__
+cypress

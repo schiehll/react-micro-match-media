@@ -2,6 +2,9 @@
 
 > zero dependencies, ~1kb render prop wrapper of window.matchMedia
 
+[![travis build](https://img.shields.io/travis/schiehll/react-micro-match-media.svg?style=flat-square)](https://travis-ci.org/schiehll/react-micro-match-media)
+[![version](https://img.shields.io/npm/v/react-micro-match-media.svg?style=flat-square)](http://npm.im/react-micro-match-media)
+
 # Instalation
 
 ```bash

@@ -23,10 +23,10 @@
   "scripts": {
     "build": "node ./scripts/build.js",
     "build:test":
-      "webpack --config __tests__/webpack.config.js --mode production --silent",
-    "serve:test": "serve __tests__/public --silent --local",
-    "cypress": "cypress run",
-    "test": "npm run build:test & npm run serve:test & npm run cypress",
+      "webpack --config __tests__/webpack.config.js --mode production",
+    "serve:test": "serve __tests__/public --local --silent",
+    "cypress:run": "cypress run",
+    "test": "npm run serve:test & npm run cypress:run",
     "prepublish": "npm run build",
     "precommit": "lint-staged"
   },

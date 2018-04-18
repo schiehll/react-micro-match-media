@@ -1,20 +1,22 @@
 {
-  "name": "react-matchmedia",
+  "name": "react-micro-match-media",
   "version": "1.0.0",
   "author": "Reinaldo Schiehll <rn.schiehll@gmail.com>",
-  "main": "dist/cjs/react-matchmedia.js",
-  "module": "dist/esm/react-matchmedia.js",
+  "main": "dist/cjs/react-micro-match-media.js",
+  "module": "dist/esm/react-micro-match-media.js",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/schiehll/react-matchmedia.git"
+    "url": "https://github.com/schiehll/react-micro-match-media.git"
   },
   "keywords": [
     "react",
     "match",
     "media",
     "matchmedia",
-    "react-matchmedia",
+    "react-match-media",
+    "react-micro-match-media",
+    "micro",
     "responsive",
     "react-responsive"
   ],

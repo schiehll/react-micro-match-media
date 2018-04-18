@@ -1,15 +1,17 @@
 import React from 'react'
 
 class MatchMedia extends React.Component {
+  canUseDOM = !!(typeof window !== 'undefined')
+
   state = {
     query: this.props.query,
-    matches: window.matchMedia(this.props.query).matches
+    matches: this.canUseDOM
+      ? window.matchMedia(this.props.query).matches
+      : false
   }
 
-  matchMediaListener = e => {
-    this.setState({
-      matches: e.matches
-    })
+  matchMediaListener = ({ matches }) => {
+    this.setState({ matches })
   }
 
   addListener(query) {
